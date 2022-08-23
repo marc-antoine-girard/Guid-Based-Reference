@@ -6,7 +6,7 @@ namespace ShackLab.Editor
     [InitializeOnLoad]
     public static class GuidComponentFinder
     {
-        private const string LogoDirectory = "Packages/com.marc-antoine-girard.guid-based-reference/Runtime/Textures/guid-icon.png";
+        private const string LogoDirectory = "Packages/com.marc-antoine-girard.guid-based-reference/Editor/Textures/guid-icon.png";
         private static Texture2D texture;
         
         static GuidComponentFinder()
