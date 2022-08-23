@@ -2,7 +2,7 @@
     "name": "com.marc-antoine-girard.guid-based-reference",
     "displayName": "Guid Based Reference",
     "description": "A component to give a Globaly Unique IDentifier (GUID) to a Game Object. This GUID can then be used to reference an object even if it is another Scene, not loaded yet, or otherwise not easy to directly reference.",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "unity": "2019.1",
     "keywords": [
         "guid",
@@ -35,7 +35,7 @@
         "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "^10.0.3",
         "conventional-changelog-conventionalcommits": "^4.6.3",
-        "semantic-release": "^19.0.3"
+        "semantic-release": "^19.0.4"
     },
     "release": {
         "branches": [
