@@ -6,8 +6,8 @@
     <a href="https://github.com/marc-antoine-girard/Guid-Based-Reference/pulls">
         <img alt="GitHub pull requests" src ="https://img.shields.io/github/issues-pr/marc-antoine-girard/Guid-Based-Reference" />
     </a>
-    <a href="https://github.com/marc-antoine-girard/Guid-Based-Reference/blob/main/LICENSE.md">
-        <img alt="GitHub license" src ="https://img.shields.io/github/license/marc-antoine-girard/Guid-Based-Reference" />
+    <a href="https://img.shields.io/github/license/marc-antoine-girard/Guid-Based-Reference">
+        <img alt="GitHub pull requests" src ="https://img.shields.io/static/v1?label=License&message=Unity Technologies ApS&color=green" />
     </a>
     <img alt="GitHub last commit" src ="https://img.shields.io/github/last-commit/marc-antoine-girard/Guid-Based-Reference" />
 </p>
