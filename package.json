@@ -1,0 +1,140 @@
+{
+    "name": "com.marc-antoine-girard.guid-based-reference",
+    "displayName": "Guid Based Reference",
+    "description": "A component to give a Globaly Unique IDentifier (GUID) to a Game Object. This GUID can then be used to reference an object even if it is another Scene, not loaded yet, or otherwise not easy to directly reference.",
+    "version": "0.1.0",
+    "unity": "2019.1",
+    "keywords": [
+        "guid",
+        "guidcomponent",
+        "reference",
+        "guidreference",
+        "cross",
+        "scene"
+    ],
+    "author": {
+        "name": "Shack-Lab",
+        "email": "m.antoine.girard@gmail.com",
+        "url": "https://github.com/marc-antoine-girard"
+    },
+    "scripts": {
+        "semantic-release": "semantic-release"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marc-antoine-girard/Guid-Based-Reference.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@marc-antoine-girard"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/commit-analyzer": "^9.0.2",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^8.0.5",
+        "@semantic-release/npm": "^9.0.1",
+        "@semantic-release/release-notes-generator": "^10.0.3",
+        "conventional-changelog-conventionalcommits": "^4.6.3",
+        "semantic-release": "^19.0.3"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            [
+                "@semantic-release/commit-analyzer",
+                {
+                    "preset": "conventionalcommits",
+                    "releaseRules": [
+                        {
+                            "type": "docs",
+                            "scope": "README",
+                            "release": "patch"
+                        },
+                        {
+                            "type": "refactor",
+                            "release": "patch"
+                        },
+                        {
+                            "scope": "no-release",
+                            "release": false
+                        }
+                    ],
+                    "parserOpts": {
+                        "noteKeywords": [
+                            "BREAKING CHANGE",
+                            "BREAKING CHANGES"
+                        ]
+                    }
+                }
+            ],
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": true
+                }
+            ],
+            "@semantic-release/github",
+            [
+                "@semantic-release/release-notes-generator",
+                {
+                    "preset": "conventionalcommits",
+                    "presetConfig": {
+                        "types": [
+                            {
+                                "type": "feat",
+                                "section": "Features"
+                            },
+                            {
+                                "type": "fix",
+                                "section": "Bug Fixes"
+                            },
+                            {
+                                "type": "chore",
+                                "hidden": true
+                            },
+                            {
+                                "type": "docs",
+                                "section": "Documentation"
+                            },
+                            {
+                                "type": "style",
+                                "hidden": true
+                            },
+                            {
+                                "type": "refactor",
+                                "section": "Refactors"
+                            },
+                            {
+                                "type": "perf",
+                                "section": "Performance Improvements"
+                            },
+                            {
+                                "type": "test",
+                                "section": "Tests"
+                            }
+                        ]
+                    }
+                }
+            ],
+            [
+                "@semantic-release/changelog",
+                {
+                    "changelogFile": "CHANGELOG.md"
+                }
+            ],
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "package.json",
+                        "!package-lock.json.meta",
+                        "CHANGELOG.md"
+                    ],
+                    "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+            ]
+        ]
+    }
+}

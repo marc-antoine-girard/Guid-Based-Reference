@@ -1,0 +1,20 @@
+{
+    "name": "ShackLab.GuidReference.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:77bf8183898e8b2479ee57e39c2e558a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
