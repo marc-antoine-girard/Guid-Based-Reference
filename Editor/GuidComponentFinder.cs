@@ -26,10 +26,11 @@ namespace ShackLab.Editor
                 return;
 
             float x = GUI.skin.label.CalcSize(new GUIContent(go.name)).x;
-
-            if (selectionRect.width - x < 18) return;
-
             float offsetRight = 60;
+
+            if (selectionRect.width - x < 18)
+                offsetRight += 18 - (selectionRect.width - x);
+
             float imageSize = selectionRect.height - 4;
             Rect r = new Rect (selectionRect)
             {
