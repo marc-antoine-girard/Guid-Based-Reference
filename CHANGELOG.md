@@ -1,3 +1,10 @@
+### [1.0.3](https://github.com/marc-antoine-girard/Guid-Based-Reference/compare/v1.0.2...v1.0.3) (2022-09-08)
+
+
+### Bug Fixes
+
+* removed tests dependencies ([3e0fd58](https://github.com/marc-antoine-girard/Guid-Based-Reference/commit/3e0fd58c9a88cd7589589e9cf977a5379db570dc))
+
 ### [1.0.2](https://github.com/marc-antoine-girard/Guid-Based-Reference/compare/v1.0.1...v1.0.2) (2022-08-23)
 
 
